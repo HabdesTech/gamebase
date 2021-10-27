@@ -1,0 +1,143 @@
+:root {
+    --primario_background: 0, 62, 193;
+    --color_alterno: #ffff;
+    --color_principal: #396BC2;
+    --habdes_digital_principal: #057AF0;
+}
+
+/* aileron heavy */
+
+/* COMPONENTES */
+
+/* Botones */
+
+.btn_principal {
+    color: var(--color_alterno);
+    background: var(--color_principal);
+    border: 2px solid var(--color_alterno);
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_principal_medium {
+    color: var(--color_alterno);
+    background: var(--color_principal);
+    border: 2px solid var(--color_alterno);
+    padding: 8px 0;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_principal_small {
+    color: var(--color_alterno);
+    background: var(--color_principal);
+    border: 2px solid var(--color_alterno);
+    padding: 8px 0;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn_alterno {
+    color: var(--color_principal);
+    background: var(--color_alterno);
+    border: 2px solid var(--color_principal);
+    padding: 8px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* CIERRE COMPONENTES */
+
+.general_background {
+    background: rgba(var(--primario_background), 0.03);
+}
+
+/* NAVBAR SECTION */
+
+.navbar_section {
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.navbar_container_content>a>img {
+    width: 70px;
+}
+
+/* NAVBAR SECTION CIERRE */
+
+/* GAME SECTION */
+
+.game_section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.game_section_container_tittle {
+    margin: 1.5% 0 0;
+}
+
+.game_section_container_content_intentos {
+    margin: 2.5%;
+}
+
+.game_section_container_button {
+    margin: 15% 0;
+}
+
+.game_section_container_content {
+    margin: -25% 0;
+}
+
+.game_interaction {
+    display: none;
+}
+
+/* GAME SECTION CIERRE */
+
+/* FOOTER */
+
+.general_footer_02_container_content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.under_navbar_habdes_digital {
+    background: var(--habdes_digital_principal);
+}
+
+.under_navbar_habdes_digital>div>h5 {
+    color: var(--color_alterno);
+    font-weight: lighter
+}
+
+.under_navbar_habdes_digital>div>h5>a {
+    color: var(--color_alterno);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 768px) {
+    .game_section_container_button {
+        margin: 60% 0;
+    }
+    .game_section_container_content {
+        margin: -80% 0;
+    }
+    .game_section_container_content_intentos {
+        margin: 5%;
+    }
+}
