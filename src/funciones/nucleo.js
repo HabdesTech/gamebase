@@ -60,15 +60,17 @@ function insertarIntentos() {
 
 function generadorDePistas() {
     if ((numero_ingresado.value - numero_aleatorio) >= 80 || (numero_ingresado.value - numero_aleatorio) <= -80) {
-        document.getElementById("#00007").innerHTML = "Diferencia mayor a 80"
-    } else if ((numero_ingresado.value - numero_aleatorio) >= 60 || (numero_ingresado.value - numero_aleatorio) <= -60) {
-        document.getElementById("#00007").innerHTML = "Diferencia mayor a 60"
-    } else if ((numero_ingresado.value - numero_aleatorio) >= 40 || (numero_ingresado.value - numero_aleatorio) <= -40) {
         document.getElementById("#00007").innerHTML = "Diferencia mayor a 40"
+    } else if ((numero_ingresado.value - numero_aleatorio) >= 60 || (numero_ingresado.value - numero_aleatorio) <= -60) {
+        document.getElementById("#00007").innerHTML = "Diferencia mayor a 30"
+    } else if ((numero_ingresado.value - numero_aleatorio) >= 40 || (numero_ingresado.value - numero_aleatorio) <= -40) {
+        document.getElementById("#00007").innerHTML = "Diferencia mayor a 80"
+    } else if ((numero_ingresado.value - numero_aleatorio) >= 30 || (numero_ingresado.value - numero_aleatorio) <= -30) {
+        document.getElementById("#00007").innerHTML = "Diferencia mayor a 60"
     } else if ((numero_ingresado.value - numero_aleatorio) >= 20 || (numero_ingresado.value - numero_aleatorio) <= -20) {
-        document.getElementById("#00007").innerHTML = "Diferencia mayor a 20"
-    } else if ((numero_ingresado.value - numero_aleatorio) >= 10 || (numero_ingresado.value - numero_aleatorio) <= -10) {
         document.getElementById("#00007").innerHTML = "Diferencia mayor a 10"
+    } else if ((numero_ingresado.value - numero_aleatorio) >= 10 || (numero_ingresado.value - numero_aleatorio) <= -10) {
+        document.getElementById("#00007").innerHTML = "Diferencia mayor a 20"
     } else if ((numero_ingresado.value - numero_aleatorio) >= 5 || (numero_ingresado.value - numero_aleatorio) <= -5) {
         document.getElementById("#00007").innerHTML = "Diferencia mayor a 5"
     }
